@@ -1,6 +1,6 @@
 # Haskell-opas
 Tämän oppaan tarkoitus on opettaa Haskell-ohjelmointikieltä ihmisille joilla on jotain kokemusta jostain muusta ohjelmointikielestä (esim. Java) ja halu oppia funktionaalista ohjelmointia. Opasta **ei** pidä kuitenkaan ottaa
-"oikeana" oppaana, vaan se on tarkoitettu lähinnä kirjoittajan omiin kokeiluihin ja yleiseen oppimiseen (johtuu mm. siitä ettei kirjoittaja ole mikään Haskell-guru tätä kirjoittaessa, vaan itsekkin oppimassa kyseistä kieltä). Jos kuitenkin koit hyötyväsi oppaasta jotain on se aina positiivista :)
+"oikeana" oppaana, vaan se on tarkoitettu lähinnä kirjoittajan omiin kokeiluihin ja yleiseen oppimiseen (johtuu mm. siitä ettei kirjoittaja ole mikään Haskell-guru tätä kirjoittaessa, vaan itsekkin oppimassa kyseistä kieltä). Jos kuitenkin koit hyötyväsi oppaasta jotain, on se aina positiivista :)
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/120px-Haskell-Logo.svg.png)
 
@@ -23,7 +23,7 @@ Ubuntulle asentaminen on erittäin helppoa.
 
 Aja konsolissasi komento `sudo apt-get install haskell-platform` ja saat käyttöösi koko Haskell-kielen peruskirjaston. http://packages.ubuntu.com/trusty/haskell-platform
 
-Näistä tärkein tulee todennäköisesti olemaan komento `ghci` tai `ghc` (http://en.wikipedia.org/wiki/Glasgow_Haskell_Compiler), joka on interaktiinen kääntäjä Haskell-kielelle. Sen avulla voidaan ajaa Haskell-koodia suoraan terminaalista käsin jolloin erilainen kokeilu on erittäin helppoa.
+Näistä tärkein tulee todennäköisesti olemaan komento `ghci` tai `ghc` (http://en.wikipedia.org/wiki/Glasgow_Haskell_Compiler), joka on interaktiinen kääntäjä Haskell-kielelle. Sen avulla voidaan ajaa Haskell-koodia suoraan terminaalista käsin, jolloin erilainen kokeilu on erittäin helppoa.
 
 Jos kaikki onnistui kuten piti, pitäisi sinun pystyä nyt ajamaan esimerkiksi komentosarja
 
