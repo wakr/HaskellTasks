@@ -221,11 +221,9 @@ product [a] - palauttaa taulukon a yhteenlasketun tulon.
 
 a `elem` [a] - palauttaa onko a taulukon a alkio. `elem` toimii tässä tapauksessa ns. infix funktiona.
 
+ 
 
 ### Välit
-
-
-
 
 ### Joukon (ei se nimi) määritelmä
 
