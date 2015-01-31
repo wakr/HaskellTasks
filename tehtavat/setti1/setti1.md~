@@ -113,7 +113,7 @@ Vinkki: Käytä Hooglea tai Googlea määrittelemään mitä `div`-funktio tekee
 Tästä lähtien kirjoita kaikki käyttämäsi komennot `firstWeek.hs`-tiedostoon. Muista käyttää GHCI:ta kokeilemaan, että funktiosi toimii. Voit ladata tiedoston helposti komennolla `ghci firstWeek.hs` ja käyttää luomiasi funktioita.
 ***
 ### Ensimmäinen funktio
-
+***
 Tee funktio, joka kertoo luvun a luvulla 2. Funktiosi pitäisi toimia seuraavalla tavalla:
 
 ```haskell
@@ -122,7 +122,8 @@ Tee funktio, joka kertoo luvun a luvulla 2. Funktiosi pitäisi toimia seuraavall
 > sinunFunktiosiNimi 1000000000
 2000000000
 ```
-
+***
+***
 Tee funktio, joka käyttää edellistä funktiota niin, että se kertoo luvun a b. Ts.
 seuraava kutsu evaluoituu:
 
@@ -130,7 +131,8 @@ seuraava kutsu evaluoituu:
  > yhdistettyFunktio 2 5
 40
 ```
-
+***
+***
 Tee funktio, joka kertoo luvun a kahdella jos ja vain jos, luku on suurempi kuin 100.
 
 Tip: syntaksi on muotoa:
@@ -140,8 +142,8 @@ if a onPienempiKuin b
   else teeJotain
 ```
 Huom. sisennys!
-
-
+***
+***
 Kirjoita "Hello kayttaja"- ohjelma, jossa kayttaja korvautuu kayttajan syottamalla arvolla.
 Kayta apuna putStrLn -komentoa, joka tulostaa merkkijonon ruudulle. Huom. muista Haskelin laiska evaluointi eli esim. a = "merkkijono" on validia Haskelia.
 
@@ -150,7 +152,7 @@ Kayta apuna putStrLn -komentoa, joka tulostaa merkkijonon ruudulle. Huom. muista
  > sinunFunktiosi "Samu"
 "Hello Samu"
 ```
-
+***
 
 ### Listat
 
@@ -162,6 +164,7 @@ Listojen toiminto on samanalaista, kuin Javassa. Ainoa eroavaisuus löytyy käyt
 
 Huom. listassa ei voi olla sekaisin stringejä ja numeroita!
 
+***
 Tee funktio käyttäen hyödyksi ++-katenointia. Funktiosi on siis katenoitava kaksi listaa a ja b yhdeksi.
 
 ```haskell
@@ -170,6 +173,7 @@ Tee funktio käyttäen hyödyksi ++-katenointia. Funktiosi on siis katenoitava k
 > sinunFunktiosi "cha" "ng"
 "chang"
 ```
+***
 
 Listojen eteen yhdistäminen on helppoa Haskelissa. Tarvitaan vain komento : ja yhdistettävä taulukko. Esimerkiksi 
 
@@ -179,14 +183,14 @@ Listojen eteen yhdistäminen on helppoa Haskelissa. Tarvitaan vain komento : ja 
 ```
 
 Tämä toimii myös merkkijonoihin, koska merkkijonot voidaan laskea merkkitaulukoksi. 
-
+***
 Tee funktio, joka luo yhdet uloimmat sulut taulukolle. Eli taulukko [1,2] on muututtava [[1,2]]. Käytä edellä mainittua :-operaattoria. Huom. jälkimmäisen on oltava aina taulukko.
 
 ```haskell
  > funktiosi 1
 [1]
 ```
-
+***
 ##### Tärkeitä listaan kuuluvua operaattoreita
 
 `[a] !! 2` - palauttaa taulukosta a indeksistä 2 olevan arvon.
@@ -240,7 +244,7 @@ Lisää hyödyllisiä funktioita listoihin:
 
 ### Joukon (ei se nimi) määritelmä
 
-Joukko voidaan määritellä Haskelissa melkein samalla tavalla, kuin matemaattisestikkin. Esimerkiksi kaikkien alle 10 olevien luonnollisten lukujen kertoma kahdella oleva joukko on ![](http://s3.amazonaws.com/lyah/setnotation.png). 
+Joukko voidaan määritellä Haskelissa melkein samalla tavalla, kuin matemaattisestikkin. Esimerkiksi kaikkien alle 10 olevien luonnollisten lukujen kertoma kahdella oleva joukko on  ![](http://s3.amazonaws.com/lyah/setnotation.png). 
 
 Haskelissa tämä sama määriteltäisiin 
 
@@ -248,7 +252,44 @@ Haskelissa tämä sama määriteltäisiin
  > [x*2 | x <- [1..10]] 
 ```
 
+***
+Tee funktio, joka tulostaa kaikki parilliset luonnolliset luvut väliltä a..b. Käytä hyväksesi `mod` jakojäännös-funktiota, joka toimii myös ns. inline funktiona eli kahden parametrin välissä. Esimerkiksi 2 'mod' 4.
 
+```haskell
+ > parillisetValilta 1 10 
+[2,4,6,8,10]
+```
+***
 ### Monikot
 
-###
+Monikot (Tuple) ovat Haskelissa sukua listoille. Niihin voidaan tallettaa yhden tyypin sijasta useaa eri tyyppiä ja täten esimerkiksi seuraava toimii
+
+```haskell
+> (1,2,3,'a')
+(1,2,3,'a')
+```
+
+Monikoita on mahdollista tallettaa myös taulukkoihin `[(1,2)]`, mutta tällöin astuu voimaan taas taulukon vaatima yksikäsitteinen tyypitys. Käytännössä tämä tarkoittaa, että seuraava ei esimerkiksi toimi: `[(1,2),(3,4,5)]`. Yksi käytetyimmistä monikkotyypeistä on kuitenkin pari `(a,b)`. Tämä on niin yleinen tyyppi, että Haskell tarjoaa siihen muutaman erittäin hyödyllisen komennon. 
+
+`fst (a,b)` - Palauttaa ensimmäisen eli a-alkion.
+`snd (a,b)` - Palauttaa toisen eli b-alkion.
+
+Yksi hyödyllinen komento listan luomiseen, joka sisältää pareja on
+
+`zip [a] [b]` - Palauttaa [(a,b)]
+
+Se toimii myös äärettömille listoille:
+
+```haskell
+> zip [1..] [1..]
+[(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7),(8,8),(9,9),(10,10),(11,11),(12,12),(13,13),(14,14),(15,15),(16,16),(17,17),(18,18),(19,19)...
+```
+
+
+
+
+
+
+
+
+
