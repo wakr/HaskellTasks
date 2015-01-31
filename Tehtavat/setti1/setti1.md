@@ -189,35 +189,35 @@ Tee funktio, joka luo yhdet uloimmat sulut taulukolle. Eli taulukko [1,2] on muu
 
 ##### Tärkeitä listaan kuuluvua operaattoreita
 
-[a] !! 2 - palauttaa taulukosta a indeksistä 2 olevan arvon.
+`[a] !! 2` - palauttaa taulukosta a indeksistä 2 olevan arvon.
 
-[a] > [b] - palauttaa True, jos taulukon a arvot ovat isoimmat, kuin b. Muut vertailuoperaattorit toimivat samalla tavalla.
+`[a] > [b]` - palauttaa True, jos taulukon a arvot ovat isoimmat, kuin b. Muut vertailuoperaattorit toimivat samalla tavalla.
 
-head [a] - palauttaa ensimmäisen elementin taulukosta a.
+`head [a]` - palauttaa ensimmäisen elementin taulukosta a.
 
-tail [a] - palauttaa kaikki paitsi ensimmäisen elementin taulukosta a.
+`tail [a]` - palauttaa kaikki paitsi ensimmäisen elementin taulukosta a.
 
-last [a] - palauttaa viimeisen elementin taulukosta a.
+`last [a]` - palauttaa viimeisen elementin taulukosta a.
 
-init [a] - palauttaa kaikki paitsi viimeisen elementin taulukosta a.
+`init [a]` - palauttaa kaikki paitsi viimeisen elementin taulukosta a.
 
-length [a] - palauttaa taulukon a pituuden. 
+`length [a]` - palauttaa taulukon a pituuden. 
 
-null [a] - palauttaa True jos taulukko on tyhjä eli [].
+`null [a]` - palauttaa True jos taulukko on tyhjä eli [].
 
-reverse [a] - palauttaa taulukon a käänteisessä järjestyksessä.
+`reverse [a]` - palauttaa taulukon a käänteisessä järjestyksessä.
 
-take x [a] - palauttaa x määrän verran taulukosta a alkioita vasemmalta alkaen.
+`take x [a]` - palauttaa x määrän verran taulukosta a alkioita vasemmalta alkaen.
 
-drop x [a] - palauttaa kaikki paitsi x määrän verran taulukosta a alkioita vasemmalta alkaen.
+`drop x [a]` - palauttaa kaikki paitsi x määrän verran taulukosta a alkioita vasemmalta alkaen.
 
-maximum [a] - palauttaa isoimman arvon taulukosta a.
+`maximum [a]` - palauttaa isoimman arvon taulukosta a.
 
-minimum [a] - palauttaa pienimmän arvon taulukosta a.
+`minimum [a]` - palauttaa pienimmän arvon taulukosta a.
 
-sum [a] - palauttaa taulukon a yhteenlasketun summan.
+`sum [a]` - palauttaa taulukon a yhteenlasketun summan.
 
-product [a] - palauttaa taulukon a yhteenlasketun tulon.
+`product [a]` - palauttaa taulukon a yhteenlasketun tulon.
 
 a `elem` [a] - palauttaa onko a taulukon a alkio. `elem` toimii tässä tapauksessa ns. infix funktiona.
 
