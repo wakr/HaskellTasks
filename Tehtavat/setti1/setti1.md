@@ -224,10 +224,30 @@ a `elem` [a] - palauttaa onko a taulukon a alkio. `elem` toimii tässä tapaukse
 
 ### Välit
 
+Välin arvot saa palautettua helposti operaattorilla "..". Tee funktio joka palautta kokonaisluvut väliltä a b. Eli esimerkiksi: 
+
+```haskell
+ > vali 1 5 
+[1,2,4,5]
+```
+
+Lisää hyödyllisiä funktioita listoihin:
+
+`cycle [a]` - muodostaa äärettömän listan listasta [a].
+`repeat a` - toistaa a äärettömästi muodostaen listan, joka on täynnä a:ta.
 
 
 
 ### Joukon (ei se nimi) määritelmä
+
+Joukko voidaan määritellä Haskelissa melkein samalla tavalla, kuin matemaattisestikkin. Esimerkiksi kaikkien alle 10 olevien luonnollisten lukujen kertoma kahdella oleva joukko on ![](http://s3.amazonaws.com/lyah/setnotation.png). 
+
+Haskelissa tämä sama määriteltäisiin 
+
+```haskell
+ > [x*2 | x <- [1..10]] 
+```
+
 
 ### Monikot
 
