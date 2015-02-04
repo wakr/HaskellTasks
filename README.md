@@ -1,6 +1,6 @@
 # Haskell-opas
 Tämän oppaan tarkoitus on opettaa Haskell-ohjelmointikieltä ihmisille joilla on jotain kokemusta jostain muusta ohjelmointikielestä (esim. Java) ja halu oppia funktionaalista ohjelmointia. Opasta **ei** pidä kuitenkaan ottaa
-"oikeana" oppaana, vaan se on tarkoitettu lähinnä kirjoittajan omiin kokeiluihin ja yleiseen oppimiseen (johtuu mm. siitä ettei kirjoittaja ole mikään Haskell-guru tätä kirjoittaessa, vaan itsekkin oppimassa kyseistä kieltä). Jos kuitenkin koit hyötyväsi oppaasta jotain, on se aina positiivista :)
+"oikeana" oppaana, vaan se on tarkoitettu lähinnä kirjoittajan omiin kokeiluihin ja yleiseen oppimiseen (johtuu mm. siitä ettei kirjoittaja ole mikään Haskell-guru tätä kirjoittaessa, vaan itsekkin oppimassa kyseistä kieltä). Jos kuitenkin koit hyötyväsi oppaasta jotain, on se aina positiivista.
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/120px-Haskell-Logo.svg.png)
 
@@ -41,7 +41,7 @@ Huom. `Prelude>` jälkeen oleva koodi suoritetaan.
 
 1. Tee forkki reposta
 2. Lue materiaali tehtävän kansiosta ja tee annetut tehtävät, jotka on jaettu omiin kansiohinsa
-3. Jos testit (testejä tulee aina sitten, kun ehdin :D) menevät läpi laita pull request
+3. Jos testit (testejä tulee aina sitten, kun ehdin) menevät läpi laita pull request
 4. Muista suorittaa komento `git pull` tasaisin väliajoin, jotta saat aina uusimman version
 
 
@@ -62,7 +62,7 @@ Haskeliin ei yleisesti ole mitään yleistä IDEä, mutta hyviä ohjelmia Haskel
   * https://atom.io/packages/language-haskell
   * https://atom.io/packages/ide-haskell
 
-Käytännössä suurin hyöty "IDE":n käyttämisestä voi olla code complition sekä ghci:n yhdistäminen, mutta edelliset eivät missään nimessä ole pakollisia. Voit kirjoittaa vaikka `gedit`:in kautta, jos siltä tuntuu :)
+Käytännössä suurin hyöty "IDE":n käyttämisestä voi olla code complition sekä ghci:n yhdistäminen, mutta edelliset eivät missään nimessä ole pakollisia. Voit kirjoittaa vaikka `gedit`:in kautta, jos siltä tuntuu.
 
 ![](http://www.quickmeme.com/img/e0/e00e114f5d08e0cc248325797774e74e986efcfdbb084865c5ce9d83936dfdf8.jpg)
 
